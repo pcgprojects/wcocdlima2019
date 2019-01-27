@@ -88,7 +88,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             /* Enviando correo */
             sendEmailConfirm($data);
             sendEmailConfirm2($data);	
-	
+			sendEmailClienteVisa($data);
+			
             $rpta = [
                 'id' => 1,
                 'msg' => "Dear participant, we will contact you as soon as possible, to help you with the registration process at WCOCD LIMA 2019.<br>
